@@ -29,7 +29,11 @@ module "resource_group" {
   rg_name  = "rg_vinod"
   location = "west us"
 }
-
+module "resource_group" {
+  source   = "../module/azurerm_rg"
+  rg_name  = "rg_Sondhiya"
+  location = "west us"
+}
 module "vnet" {
     source = "../module/azurerm_vnet"
     depends_on = [module.resource_group]
