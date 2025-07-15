@@ -10,6 +10,8 @@ module "resource_group" {
   location = "centralus"
 }
 
+# avinash kumawat
+
 module "resource_group" {
   source   = "../module/azurerm_rg"
   rg_name  = "rg_vi"
