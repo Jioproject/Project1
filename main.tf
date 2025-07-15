@@ -1,5 +1,11 @@
 module "resource_group" {
   source   = "../module/azurerm_rg"
+  rg_name  = "avinash"
+  location = "centralus"
+}
+
+module "resource_group" {
+  source   = "../module/azurerm_rg"
   rg_name  = "rg_vi"
   location = "centralus"
 }
