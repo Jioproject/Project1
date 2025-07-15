@@ -1,4 +1,5 @@
 module "resource_group" {
+  #ok
   source   = "../module/azurerm_rg"
   rg_name  = "avinash"
   location = "centralus"
