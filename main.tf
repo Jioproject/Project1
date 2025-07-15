@@ -10,6 +10,12 @@ module "resource_group" {
   location = "centralus"
 }
 
+module "resource_group" {
+  source   = "../module/azurerm_rg"
+  rg_name  = "rg_vinod"
+  location = "west us"
+}
+
 module "vnet" {
     source = "../module/azurerm_vnet"
     depends_on = [module.resource_group]
