@@ -1,7 +1,6 @@
 module "resource_group" {
   source   = "../module/azurerm_rg"
-  #praveen
-  rg_name  = "avinash"
+  rg_name  = "praveen"
   location = "centralus"
 }
 
